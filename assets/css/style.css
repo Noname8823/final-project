@@ -27,6 +27,18 @@ a {
   margin-right: auto;
   max-width: calc(100% - 48px);
 }
+
+.line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2{
+  --line-clamp: 2;
+}
+
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -53,6 +65,12 @@ a {
   line-height: 1.26;
   letter-spacing: -0.76px;
 }
+
+.break-all{
+  word-break: break-all;
+}
+
+
 /* =======header============= */
 .header {
   background-color: #fffcf4;
@@ -285,7 +303,7 @@ a {
   font-family: var(--font-family);
   font-size: 3.8rem;
   font-weight: 700;
-  line-height:1.27 ; /* 126.316% */
+  line-height: 1.27; /* 126.316% */
   letter-spacing: -0.76px;
 }
 
@@ -330,6 +348,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  flex: 1;
 }
 
 .popular .course-item:hover {
@@ -402,3 +421,4 @@ a {
   font-weight: 600;
   line-height: 1.67;
 }
+
